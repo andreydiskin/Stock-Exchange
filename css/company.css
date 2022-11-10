@@ -1,0 +1,110 @@
+/* In the beginning of each page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* background image */
+body {
+  background-image: url("../img/background-comp.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-con {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.company-main-info {
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.company-stock-subtitle {
+  margin-left: 40px;
+}
+
+.desc {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.green {
+  color: rgb(72, 218, 72);
+}
+
+.red {
+  color: rgb(255, 22, 22);
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(106, 105, 105);
+}
+
+.img-size {
+  height: 100%;
+  margin-right: 25px;
+}
+
+.company-industry {
+  color: #0000ee;
+}
+
+.spinner-border {
+  font-size: large;
+  margin-left: 26vw;
+  margin-top: 10vh;
+}
+
+/* chart size */
+.chart-con {
+  width: 60vw;
+  margin-left: 160px;
+  margin-top: 40px;
+}
+
+.loader-chart-error {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255, 22, 22);
+  text-align: center;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 600px) {
+  /* chart size */
+  .chart-con {
+    width: 100vw;
+    margin: 0;
+  }
+  .company-name {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .company-main-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-size {
+    width: 60%;
+    padding: 3%;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;600&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap linking -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- css linking -->
+    <link rel="stylesheet" href="css/company.css" />
+    <title>Company</title>
+  </head>
+  <body>
+    <!-- first loader -->
+    <div class="loader"></div>
+
+    <div class="main-con">
+      <div class="company-main-info flex">
+        <div class="company-img"></div>
+        <h1 class="company-name"></h1>
+      </div>
+
+      <h2 class="company-stock-subtitle"></h2>
+      <p class="desc"></p>
+      <!-- chart container -->
+      <div class="chart-con">
+        <!-- chart loader -->
+        <div class="loader-chart"></div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <!-- js linking -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/comp-append-func.js"></script>
+    <script src="js/comp-helper-func.js"></script>
+    <script src="js/company.js"></script>
+  </body>
+</html>

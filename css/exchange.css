@@ -1,0 +1,234 @@
+/* Google font connecting */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* In the beginning of each page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* background image */
+body {
+  background-image: url("../img/background-ex.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.form-control {
+  width: 1000px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 19px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 19px 5px rgba(0,0,0,0);
+}
+
+/* no opacity for search bar */
+.bg-light {
+  --bs-bg-opacity: 0;
+}
+
+.btn {
+  border-radius: 0;
+  cursor: pointer;
+  border-radius: 5%;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 19px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 19px 5px rgba(0,0,0,0);
+}
+
+.results-list ul {
+  padding-left: 22vw;
+}
+
+.results-list ul li {
+  height: 66px;
+  padding-top: 24px;
+
+  list-style-type: none;
+
+}
+
+.results-list ul li a {
+  font-family: "Open Sans";
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(106, 105, 105);
+}
+
+/* divider for each li */
+.li-divider {
+  width: 56vw;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* no divider on the top of the first */
+.results-list ul div:first-child {
+  border: 0;
+}
+
+.ten-res-error {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255, 22, 22);
+}
+
+/* no dots */
+.link {
+  text-decoration: none;
+}
+
+.spinner-border {
+  font-size: large;
+  margin-left: 48vw;
+  margin-top: 27vh;
+}
+
+.green {
+  font-family: "Open Sans";
+  color: rgb(72, 218, 72);
+  font-weight: bold;
+}
+
+.red {
+  font-family: "Open Sans";
+  color: rgb(255, 22, 22);
+  font-weight: bold;
+}
+
+.comp-symbol {
+  font-family: "Open Sans";
+  color: rgb(150, 150, 150);
+  font-weight: bold;
+}
+
+.img-size {
+  height: 100%;
+  margin-right: 18px;
+}
+
+.company-link {
+  align-items: center;
+  padding: 0.5%;
+}
+
+.nasdaq-con {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(122, 122, 122);
+}
+
+.nasdaq-header {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+/* marquee */
+.marquee-con {
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-span {
+  position: absolute;
+  line-height: 50px;
+  animation: marquee 2000s linear infinite;
+  animation-delay: 0.1s;
+  margin-left: 100vw;
+}
+
+.symbol {
+  color: black;
+}
+
+.price {
+  color: rgb(72, 218, 72);
+}
+
+.highlight {
+  background-color: rgba(255, 255, 0, 0.895);
+}
+
+/* marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+/* responsiveness */
+@media only screen and (max-width: 1200px) {
+  .form-control {
+    width: 700px;
+  }
+  .highlight,.green,.red,.results-list ul li a,.results-list ul li span {
+    font-size: 13px;
+  }
+    
+}
+@media only screen and (max-width: 900px) {
+  .form-control {
+    width: 400px;
+  }
+  .results-list ul li a {
+    font-size: 9px;
+  }
+  .highlight,.green,.red,.results-list ul li a,.results-list ul li span {
+    font-size: 9px;
+  }
+  .results-list ul{
+    /* width: 100%; */
+    /* padding: 0; */
+    /* margin: 0; */
+  }
+  
+
+}
+@media only screen and (max-width: 600px) {
+  .form-control {
+    width: 200px;
+  }
+  .results-list ul li a {
+    font-size: 12px;
+  }
+  .nasdaq-header {
+    font-size: 2em;
+  }
+  .results-list ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  .highlight,.green,.red,.results-list ul li a,.results-list ul li span {
+    font-size: 7px;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .highlight,.green,.red,.results-list ul li a,.results-list ul li span {
+    font-size: 7px;
+  }
+}
